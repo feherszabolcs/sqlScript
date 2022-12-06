@@ -7,14 +7,14 @@ namespace sqlScript2
 {
     public class Program
     {
-         static string path = "borvidekek.txt"; // érdemes "copy always" módon bemásolni az output könyvtárba!
-         static string dbName = "borvidek"; // a létrehozott tábla neve
+         static string path = ""; // érdemes "copy always" módon bemásolni az output könyvtárba!
+         static string dbName = ""; // a létrehozott tábla neve
         //public static int propCount = 0;
         static void Main(string[] args)
         {
             //Console.Write("Jellemzők (oszlopok) száma: ");
 
-            if (path == "") Console.WriteLine("először állíts be elérési utat a txt-hez!");
+            if (path == "" || dbName == "") Console.WriteLine("először állíts be elérési utat a txt-hez és táblanevet! (Program.cs 10-11. sor )");
             else Insert(path);
         }
         static void Insert(string path) 

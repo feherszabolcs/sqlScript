@@ -17,10 +17,10 @@ namespace sqlScript2
 
         
          
-        public Table(string line)
+        public Table(string line)  //TODO: +line pm -> variálható propCount
         {
             string[] m = line.Split(';');
-            if(m.Length == 2)
+            if(m.Length == 3)
             {
                 id = m[0];
                 prop1 = m[1];
