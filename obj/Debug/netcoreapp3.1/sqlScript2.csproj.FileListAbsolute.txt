@@ -1,0 +1,15 @@
+D:\things\Programs\sqlScript2\bin\Debug\netcoreapp3.1\sqlScript2.exe
+D:\things\Programs\sqlScript2\bin\Debug\netcoreapp3.1\borvidekek.txt
+D:\things\Programs\sqlScript2\bin\Debug\netcoreapp3.1\sqlScript2.deps.json
+D:\things\Programs\sqlScript2\bin\Debug\netcoreapp3.1\sqlScript2.runtimeconfig.json
+D:\things\Programs\sqlScript2\bin\Debug\netcoreapp3.1\sqlScript2.runtimeconfig.dev.json
+D:\things\Programs\sqlScript2\bin\Debug\netcoreapp3.1\sqlScript2.dll
+D:\things\Programs\sqlScript2\bin\Debug\netcoreapp3.1\sqlScript2.pdb
+D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.csproj.AssemblyReference.cache
+D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.GeneratedMSBuildEditorConfig.editorconfig
+D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.AssemblyInfoInputs.cache
+D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.AssemblyInfo.cs
+D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.csproj.CoreCompileInputs.cache
+D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.dll
+D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.pdb
+D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.genruntimeconfig.cache
