@@ -1,4 +1,4 @@
-INSERT INTO borvidek VALUES
+INSERT INTO videkek VALUES
 (1, '6', 'Soproni borvidék'),
 (2, '1', 'Nagy-Somlói borvidék'),
 (3, '1', 'Zalai borvidék'),

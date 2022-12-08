@@ -4,33 +4,53 @@ using System.Text;
 
 namespace sqlScript2
 {
-    public class Table
+    public class Table //10
     {
-        public string id { get; private set; }
-        public string prop1 { get; private set; }
-        public string prop2 { get; private set; }
+        public string ID { get; private set; }
+        public string P1 { get; private set; }
+        public string P2 { get; private set; }
 
 
-        //public string prop3 { get; private set; }
-        //public string prop4 { get; private set; }
-        //public string prop5 { get; private set; }
+        public string P3 { get; private set; }
+        public string P4 { get; private set; }
+        public string P5 { get; private set; }
+        public string P6 { get; private set; }
+        public string P7 { get; private set; }
+        public string P8 { get; private set; }
+        public string P9 { get; private set; }
+        //TODO up to 10
 
-        
-         
-        public Table(string line)  //TODO: +line pm -> variálható propCount
+
+
+        public Table(string id,string prop1, string prop2) 
         {
-            string[] m = line.Split(';');
-            if(m.Length == 3)
-            {
-                id = m[0];
-                prop1 = m[1];
-                prop2 = m[2];
-                //prop3 = m[3];
-                //prop4 = m[4];
-                //prop5 = m[5];
-            }
-            else Console.WriteLine("Módosítani kell a jellemzők számát! (Table.cs)");
+           ID = id;
+           P1 = prop1;
+           P2 = prop2;
         }
-        //Több jellemmzőnél csak töröld ki a kommenteket
+        public Table(string id, string prop1, string prop2, string prop3)
+        {
+            ID = id;
+            P1 = prop1;
+            P2 = prop2;
+            P3 = prop3;
+        }
+        public Table(string id, string prop1, string prop2, string prop3, string prop4)
+        {
+            ID = id;
+            P1 = prop1;
+            P2 = prop2;
+            P3 = prop3;
+            P4 = prop4;
+        }
+        public Table(string id, string prop1, string prop2, string prop3, string prop4, string prop5)
+        {
+            ID = id;
+            P1 = prop1;
+            P2 = prop2;
+            P3 = prop3;
+            P4 = prop4;
+            P5 = prop5;
+        }
     }
 }
