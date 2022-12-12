@@ -13,3 +13,18 @@ D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.csproj.CoreComp
 D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.dll
 D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.pdb
 D:\things\Programs\sqlScript2\obj\Debug\netcoreapp3.1\sqlScript2.genruntimeconfig.cache
+Z:\2022- '23\Prog\sqlScript-beta\bin\Debug\netcoreapp3.1\sqlScript2.exe
+Z:\2022- '23\Prog\sqlScript-beta\bin\Debug\netcoreapp3.1\borvidekek.txt
+Z:\2022- '23\Prog\sqlScript-beta\bin\Debug\netcoreapp3.1\sqlScript2.deps.json
+Z:\2022- '23\Prog\sqlScript-beta\bin\Debug\netcoreapp3.1\sqlScript2.runtimeconfig.json
+Z:\2022- '23\Prog\sqlScript-beta\bin\Debug\netcoreapp3.1\sqlScript2.runtimeconfig.dev.json
+Z:\2022- '23\Prog\sqlScript-beta\bin\Debug\netcoreapp3.1\sqlScript2.dll
+Z:\2022- '23\Prog\sqlScript-beta\bin\Debug\netcoreapp3.1\sqlScript2.pdb
+Z:\2022- '23\Prog\sqlScript-beta\obj\Debug\netcoreapp3.1\sqlScript2.csproj.AssemblyReference.cache
+Z:\2022- '23\Prog\sqlScript-beta\obj\Debug\netcoreapp3.1\sqlScript2.GeneratedMSBuildEditorConfig.editorconfig
+Z:\2022- '23\Prog\sqlScript-beta\obj\Debug\netcoreapp3.1\sqlScript2.AssemblyInfoInputs.cache
+Z:\2022- '23\Prog\sqlScript-beta\obj\Debug\netcoreapp3.1\sqlScript2.AssemblyInfo.cs
+Z:\2022- '23\Prog\sqlScript-beta\obj\Debug\netcoreapp3.1\sqlScript2.csproj.CoreCompileInputs.cache
+Z:\2022- '23\Prog\sqlScript-beta\obj\Debug\netcoreapp3.1\sqlScript2.dll
+Z:\2022- '23\Prog\sqlScript-beta\obj\Debug\netcoreapp3.1\sqlScript2.pdb
+Z:\2022- '23\Prog\sqlScript-beta\obj\Debug\netcoreapp3.1\sqlScript2.genruntimeconfig.cache
