@@ -1,11 +1,60 @@
 # SQL Script
 
-A kor·bbi ·gazati informatika ÈretssÈginÈl egy .txt f·jlban adt·k meg az adatokat az SQL feladatban. A program cÈlja, hogy a legegyszer˚bb mÛdon lÈtrhozzon minden megadott t·bl·hoz egy INSERT INTO scriptet. 
+A kor√°bbi √°gazati informatika √©retss√©gin√©l egy .txt f√°jlban adt√°k meg az adatokat az SQL feladatban.
+A program c√©lja, hogy a legegyszer≈±bb m√≥don l√©trhozzon minden megadott t√°bl√°hoz egy INSERT INTO scriptet. 
+Maxim√°lisan 10 oszlopos adatb√°zist tud kezelni.
 
+ * * *
 
-# Ez egy B…TA verziÛ!
+# Funkci√≥k
 
-Sz¸ksÈges be·llÌtani a jellemzık (a t·bla oszlopainak sz·m·t) + az elÈrhetısÈgÈt a .txt f·jlnak.
-A jˆvıben v·rhatÛ grafikus fel¸let + tˆbb egyszer˚sÌtı funkciÛ.
-Fontos: AlapbÛl 3 jellemzıre van a program ·llÌtva, ennek mÛdosÌt·s·hoz ·t kell Ìrni a kÛdot jelenleg.
+  * 10 oszlop kezel√©se
+  * f√°jl megnyit√°si hely√©nek kiv√°laszt√°sa grafikus fel√ºleten
+  * script ment√©si hely√©nek grafikus kiv√°laszt√°sa
+  * egy√©ni t√°blan√©v v√°laszt√°s
+  * gyors script k√©sz√≠t√©s, insert ut√°n a jellemz≈ëk be√≠r√°s√°val
+  * az utols√≥ <em>INSERT</em> sor ut√°n ; haszn√°lata <code>if (item.ID != data.Last().ID)</code>
+
+<footer>Szabadon haszn√°lhat√≥, m√≥dos√≠that√≥</footer>
+
+* * *
+### B≈ëv√≠t√©s eset√©n
+
+<b>Tables.cs</b>
+  * el≈ësz√∂r √∫j jellemz≈ë l√©rtehoz√°sa: <code> public string PropertyName { get; private set; } </code>
+  * konstruktor l√©trehoz√°sa: 
+
+<pre><code>
+        public Table(string id, string prop1, ....) // az √∂sszes kezelni k√≠v√°nt jellemz≈ë
+        {
+            ID = id;
+            P1 = prop1;
+            ...
+            ...
+        }
+</code></pre>
+
+<b>Program.cs</b>
+
+<pre><code>
+    if (propCount == Jellemz≈ëkSz√°ma)
+            {
+
+                foreach (var item in File.ReadAllLines(path).Skip(1))
+                {
+                    m = item.Split(';');
+                    data.Add(new Table(m[0], m[1])); // kezelni k√≠v√°nt jellemz≈ëk
+                }
+
+                foreach (var item in data)
+                {
+                    if (item.ID != data.Last().ID)
+                    {
+                        sql.Add($"({item.ID}, '{item.P1}'),"); //jellemz≈ëk hozz√°ad√°sa
+                    }
+                    else sql.Add($"({item.ID}, '{item.P1}');"); //utols√≥ sor
+                }
+            }
+</code></pre>
+
 
