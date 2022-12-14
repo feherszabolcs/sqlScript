@@ -14,6 +14,7 @@ Maximálisan 10 oszlopos adatbázist tud kezelni.
   * egyéni táblanév választás
   * gyors script készítés, insert után a jellemzők beírásával
   * az utolsó <em>INSERT</em> sor után ; használata <code>if (item.ID != data.Last().ID)</code>
+  * állítható szeparátor karakter <code>;</code> vagy <code>\t</code> (tabulátor)
 
 <footer>Szabadon használható, módosítható</footer>
 
@@ -35,6 +36,7 @@ Maximálisan 10 oszlopos adatbázist tud kezelni.
 </code></pre>
 
 <b>Program.cs</b>
+ * az elágazás létrehozása az adott jellemzőszám kezeléséhez:
 
 <pre><code>
     if (propCount == JellemzőkSzáma)
@@ -43,16 +45,16 @@ Maximálisan 10 oszlopos adatbázist tud kezelni.
                 foreach (var item in File.ReadAllLines(path).Skip(1))
                 {
                     m = item.Split(';');
-                    data.Add(new Table(m[0], m[1])); // kezelni kívánt jellemzők
+                    data.Add(new Table(m[0], m[1], .... m[x])); // a jellemzők számától függően hozzá kell adni a <em>data</em> listához az adatokat
                 }
 
                 foreach (var item in data)
                 {
-                    if (item.ID != data.Last().ID)
+                    if (item!= data.Last())
                     {
-                        sql.Add($"({item.ID}, '{item.P1}'),"); //jellemzők hozzáadása
+                        sql.Add($"({item.ID}, '{item.P1}'),"); //jellemzők hozzáadása, ezek lesznek az <em>INSERT VALUES</em> sorai
                     }
-                    else sql.Add($"({item.ID}, '{item.P1}');"); //utolsó sor
+                    else sql.Add($"({item.ID}, '{item.P1}');"); //fenti sor másolása, ez az utolsó sor lesz a scriptben
                 }
             }
 </code></pre>
